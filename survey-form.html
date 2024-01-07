@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>1st project</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">First cert project</p>
+
+    <form id="survey-form">
+      <fieldset>
+
+        <label id="name-label">Name 
+          <input id="name" type="text" required placeholder="Enter your name">
+        </label>
+
+        <label id="email-label">Email 
+          <input id="email" type="email" required placeholder="Enter your email">
+        </label>
+
+        <label id="number-label">Height
+          <input id="number" type="number" placeholder="Enter your height in cm" min="0" max="300">
+        </label>
+
+        <label id="weight-label">Weight Range
+          <select id="dropdown">
+            <option>~90</option>
+            <option>90-120</option>
+            <option>121-150</option>
+            <option>151-180</option>
+            <option>180+</option>
+          </select>
+        </label>
+
+      <label>Do you play a sport?</label>
+      <div>
+        <label>
+          <input id="sport-yes" type="radio" name="sport" value="1"> Yes
+        </label>
+        <br>
+        <label>
+          <input id="sport-no" type="radio" name="sport" value="2"> No
+        </label>
+        <br>
+        <label>
+          <input id="sport-maybe" type="radio" name="sport" value="3"> Maybe tee hee
+        </label>
+      </div>
+      </fieldset>
+
+      <fieldset>
+        <label>What sport do you play (if applicable)?</label>
+        <div>
+          <label for="soccer">
+            <input type="checkbox" value="10">Soccer
+          </label>
+          <br>
+          <label for="volleyball">
+            <input type="checkbox" value="20">Volleyball
+          </label>
+          <br>
+          <label for="basketball">
+            <input type="checkbox" value="30">Basketball
+          </label>
+          <br>
+          <label for="tennis">
+            <input type="checkbox" value="40">Tennis
+          </label>
+          <br>
+          <label for="other">
+            <input type="checkbox" value="50">Other
+          </label>
+          <br>
+          <label for="none">
+            <input type="checkbox" value="0">None
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <label>Tell us about your story (or don't  (~_~))</label>
+        <textarea id="bio">
+        </textarea>
+      </fieldset>
+
+      <input type="submit" id="submit">
+
+    </form>
+  </body>
+</html>
